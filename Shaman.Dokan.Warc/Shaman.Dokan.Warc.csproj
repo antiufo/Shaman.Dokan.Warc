@@ -8,7 +8,7 @@
   </PropertyGroup>
   <ItemGroup />
   <ItemGroup>
-    <PackageReference Include="Shaman.Scraping" Version="1.0.1.2" />
+    <PackageReference Include="Shaman.Scraping" Version="1.0.1.4" />
     <PackageReference Include="Shaman.Dokan.Base" Version="1.0.0.1" />
   </ItemGroup>
 </Project>
