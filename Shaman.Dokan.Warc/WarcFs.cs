@@ -207,6 +207,14 @@ namespace Shaman.Dokan
                             desc.SetAttributeValue(name, string.Empty);
                         }
                     }
+                    if (desc.TagName == "img")
+                    {
+                        var v = desc.TryGetImageUrl();
+                        if (v != null)
+                        {
+                            desc.SetAttributeValue("src", MakeRelativeFsUrl(baseUrl, v.AbsoluteUri, pagePath));
+                        }
+                    }
                 }
             }
             var head = doc.Descendants("head").FirstOrDefault();
